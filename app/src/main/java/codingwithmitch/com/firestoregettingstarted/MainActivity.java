@@ -82,6 +82,10 @@ public class MainActivity extends AppCompatActivity implements
     public void deleteNote(final Note note){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
+
+//        DocumentReference noteRef = db
+//                .collection("notes")
+//                .document(note.getNote_id());
         DocumentReference noteRef = db
                 .collection("notes")
                 .document(note.getNote_id());
